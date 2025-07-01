@@ -34,6 +34,7 @@ MANIFEST
 venv/
 env/
 venv-windows/
+venv-linux/
 ENV/
 env.bak/
 venv.bak/
@@ -195,3 +196,10 @@ coverage/
 # Markdown files (except README.md)
 *.md
 !README.md
+
+# Test scripts and outputs
+test-*.sh
+test-*.html
+test-*.txt
+test_*.py
+debug-*.sh

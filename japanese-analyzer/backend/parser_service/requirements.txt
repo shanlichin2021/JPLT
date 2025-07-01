@@ -1,0 +1,72 @@
+# parser.py - Enhanced with Advanced Transformer Models and Stacked Consensus
+# --- Main Application Framework ---
+fastapi[all]
+
+# --- NLP Libraries with Version Pinning for Compatibility ---
+# Pin spaCy to a version known to be compatible with the current GiNZA
+spacy>=3.7.0,<3.8.0
+
+# The GiNZA library itself
+ginza
+
+# --- THE CRITICAL FIX ---
+# The GiNZA model is a package to be installed directly via pip.
+ja_ginza
+
+# Pin NumPy to avoid conflicts with other libraries
+numpy<2.0
+
+# --- Advanced Transformer Models ---
+# PyTorch with CUDA support for GPU acceleration
+torch>=2.0.0,<2.3.0
+# Transformers library with latest Japanese models
+transformers>=4.35.0
+# Additional optimization libraries
+accelerate>=0.24.0
+# Flash Attention 2 for memory efficiency (if available)
+flash-attn>=2.0.0; platform_machine == "x86_64"
+
+# --- Machine Learning & Consensus ---
+# Scikit-learn for stacked generalization
+scikit-learn>=1.3.0
+# XGBoost for advanced meta-learning
+xgboost>=1.7.0
+# Pandas for data manipulation
+pandas>=2.0.0
+
+# --- Vector Database & Embeddings ---
+# Chroma DB for vector storage and similarity search
+chromadb>=0.4.15
+# Sentence transformers for Japanese text embeddings
+sentence-transformers>=2.2.2
+
+# --- Japanese NLP Tokenizers ---
+# Japanese tokenizer support
+fugashi
+ipadic
+# SudachiPy for alternative tokenization
+SudachiPy>=0.6.0
+# Janome for additional tokenization
+Janome
+
+# --- Performance & Optimization ---
+# FAISS for fast similarity search
+faiss-cpu>=1.7.4
+# Memory profiling and optimization
+psutil>=5.9.0
+# Async support
+aiofiles>=23.0.0
+
+# --- Development & Testing ---
+# Testing framework
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+# Code quality
+black>=23.0.0
+flake8>=6.0.0
+
+# --- Monitoring & Logging ---
+# Advanced logging
+structlog>=23.0.0
+# Performance monitoring
+py-spy>=0.3.14

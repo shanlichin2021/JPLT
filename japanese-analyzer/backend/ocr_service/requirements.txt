@@ -1,0 +1,16 @@
+# ocr_server.py
+# --- Main Application Framework ---
+# FastAPI is a modern, fast web framework for building APIs.
+# The [all] installs uvicorn (the server) and other useful extras.
+fastapi[all]
+
+# --- Core OCR Logic ---
+# The main package for Manga-OCR. This will pull in its own
+# dependencies, including torch and transformers.
+manga-ocr
+
+# --- Compatibility Fix ---
+# Just like with the parser service, we pin NumPy to a version
+# before the major 2.0 release to ensure maximum compatibility
+# with all the machine learning libraries pulled in by manga-ocr.
+numpy<2.0
