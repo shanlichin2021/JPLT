@@ -2,6 +2,12 @@
 
 An advanced web application for Japanese language learning and analysis. Upload images or input text to get OCR extraction, morphological analysis, dictionary lookups, and interactive furigana rendering.
 
+## Preview
+
+![Application Preview 1](firefox_FYpKxJLYJr.png)
+
+![Application Preview 2](firefox_K0kPDazL8p.png)
+
 ## Features
 
 - **OCR Processing**: Extract text from images with confidence scoring
