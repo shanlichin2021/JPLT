@@ -4,9 +4,9 @@ An advanced web application for Japanese language learning and analysis. Upload 
 
 ## Preview
 
-![Application Preview 1](firefox_FYpKxJLYJr.png)
+![Application Preview 1](preview1.png)
 
-![Application Preview 2](firefox_K0kPDazL8p.png)
+![Application Preview 2](preview2.png)
 
 ## Features
 
